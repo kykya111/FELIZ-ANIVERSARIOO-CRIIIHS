@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    color: #761acc;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body 
+{
+    background: pink;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.meio {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 5px 8px 20px purple;
+    z-index: 2;
+}
+
+.box {
+    background: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(255, 107, 223));
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.img1 {
+  position: relative; /* o texto vai se posicionar em relação a este bloco */
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.img1 img {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    bottom: 600px;
+    z-index: 1;
+    aspect-ratio: 3/3;
+    border-radius: 20px;
+    object-position: bottom;
+    width: 90%;
+    height: auto;
+    display: block;
+    line-height: 1.4;
+    
+}
+
+.contain {
+    display: flex;
+}
+
+.img1 p{
+    position: absolute;      /* fica por cima da imagem */
+    top: 187%;                /* move o texto para o meio vertical */
+    left: 35%;               /* move o texto para o meio horizontal */
+    transform: translate(-50%, -50%); /* centraliza perfeitamente */
+    color: white;            /* cor visível sobre a imagem */
+    font-size: 1.5rem;
+    z-index: 2;              /* garante que fique acima da imagem */
+    background: rgba(0,0,0,0.4); /* opcional: fundo semitransparente */
+    padding: 0.5rem 1rem;    /* espaçamento interno */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.img2 img{
+    object-position: center;
+
+}
